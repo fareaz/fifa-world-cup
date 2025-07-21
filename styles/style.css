@@ -17,14 +17,15 @@ img {
     padding: 15px 25px;
     border: none;
     border-radius: 8px;
+    font-weight: 700;
 }
 /* banner */
 .banner {
-  background-color: black;
+  background-color:black;
   display: flex;
   align-items: center;
   margin: 50px auto;
-  color: rgb(255, 255, 255);
+  color:rgb(255, 255, 255);
   border-radius: 10px;
 }
 .banner-content {
@@ -38,6 +39,7 @@ img {
 }
 .banner p {
     margin: 15px 0;
+    color: white;
 }
 .banner-img{
    flex: 1;
@@ -45,8 +47,25 @@ img {
 .banner-img img{
     display: block;
 }
-
-
+/* main */
+/* button-container */
+.card-container{
+    display: flex;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: fit-content;
+    gap: 20px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+.btn-2{
+    background-color: white;
+    color: black; 
+} 
 
 
 
@@ -68,7 +87,16 @@ img {
     font-size: 3rem;
     line-height: 3rem ;
 }
-
+.button-container{
+    width: 100%;
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: center;
+}
+.button-container *{flex: 1;}
+.button-container button{
+    border: 1px solid black;
+}
 }
 
 
@@ -86,4 +114,10 @@ img {
     padding-left: 0;
     padding-top: 30px;
     }
+    .button-container{
+   
+    flex-direction: column;
+  
+  
+}
 }
