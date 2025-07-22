@@ -51,6 +51,7 @@ img {
 /* button-container */
 .card-container{
     display: flex;
+    gap: 20px;
 }
 .button-container{
     display: flex;
@@ -66,6 +67,53 @@ img {
     background-color: white;
     color: black; 
 } 
+
+/* add-container */
+.add-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    flex: 1;
+}
+.add {
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 10px;
+}
+.add img{
+    border-radius: 10px 10px 0 0;
+}
+.add-content{
+    padding: 20px;   
+}
+.add-content .btn {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 8px 17px;
+  margin-top: 10px;
+}
+.add h2 {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.add-icon {
+  display: flex;
+  gap: 20px;
+  color: #161616cc;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -97,6 +145,12 @@ img {
 .button-container button{
     border: 1px solid black;
 }
+.card-container{
+    flex-direction: column;
+}
+.add-container{
+    grid-template-columns: repeat(2,1fr);
+}
 }
 
 
@@ -116,8 +170,12 @@ img {
     }
     .button-container{
    
+    flex-direction: column; 
+}
+.card-container{
     flex-direction: column;
-  
-  
+}
+.add-container{
+    grid-template-columns:1fr;
 }
 }
